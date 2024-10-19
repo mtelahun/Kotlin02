@@ -1,17 +1,14 @@
+val fruits: MutableList<String> = mutableListOf("Banana", "Apple", "Mango")
+
 fun main() {
-    showGreeting()
-    showGreeting("Mike")
-    showGreeting("John", 3)
-}
+    println("Size of the fruits is ${fruits.size}")
 
-fun showGreeting() {
-    println("Welcome !")
-}
-
-fun showGreeting(name: String, city: String="London") {
-    println("Welcome $name, from $city!")
-}
-
-fun showGreeting(name: String, count: Int) {
-    println("Welcome $name, your index is $count!")
+    fruits.forEach {
+        i -> println("This is $i")
+    }
+    fruits.add("Orange")
+    println("Size of fruits is ${fruits.size}")
+    fruits.forEach {
+        i -> println("This is $i")
+    }
 }
