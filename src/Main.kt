@@ -8,8 +8,8 @@ fun showGreeting() {
     println("Welcome !")
 }
 
-fun showGreeting(name: String) {
-    println("Welcome $name!")
+fun showGreeting(name: String, city: String="London") {
+    println("Welcome $name, from $city!")
 }
 
 fun showGreeting(name: String, count: Int) {
